@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "hashkey-micro-lending-ai": {
+      "command": "cargo",
+      "args": [
+        "run",
+        "--release",
+        "--quiet"
+      ],
+      "env": {
+        "RUST_LOG": "info",
+        "HACKATHON_TRACK": "HashKey Chain",
+        "PROJECT_TICKER": "HKLEND"
+      },
+      "tools": [
+        {
+          "name": "verify_hklend_invariants",
+          "description": "Verifies deterministic invariants for HashKey Micro Lending AI on HashKey Chain."
+        },
+        {
+          "name": "execute_hklend_action",
+          "description": "Executes authenticated DeFi state transition."
+        }
+      ]
+    }
+  }
+}
